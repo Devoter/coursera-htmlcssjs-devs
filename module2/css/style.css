@@ -1,3 +1,4 @@
+/* Remove comments to apply custom paddings to dummy text */
 * {
   box-sizing: border-box;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
@@ -57,9 +58,10 @@ h1 {
   background-color: #afc0cb;
 }
 
-.col:nth-child(3n+1) .content {
+
+/*.col:nth-child(3n+1) .content {
   padding: 52px 15px 4px;
-}
+}*/
 
 .col:nth-child(3n+2) header {
   background-color: #b8665c;
@@ -93,9 +95,9 @@ h1 {
     width: 100%;
   }
 
-  .col:nth-child(3n) .content {
+  /*.col:nth-child(3n) .content {
     padding: 40px 2px 16px 15px;
-  }
+  }*/
 }
 
 @media (min-width: 992px) {
@@ -112,10 +114,9 @@ h1 {
     padding-left: 15px;
     padding-right: 15px;
     width: 33.33333%;
-    height: 100%;
   }
 
-  .col:nth-child(3n) .content {
+  /*.col:nth-child(3n) .content {
     padding: 40px 20px 16px 15px;
-  }
+  }*/
 }
