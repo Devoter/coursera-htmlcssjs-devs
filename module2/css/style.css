@@ -1,0 +1,122 @@
+/* Remove comments to apply custom paddings to dummy text */
+* {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.75em;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.row {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.row::after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.col {
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.content {
+  background-color: #eee;
+  border: 1px solid #000;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 40px 20px 16px 15px;
+  position: relative;
+}
+
+.content > header {
+  border-color: #000;
+  border-width: 0 0 1px 1px;
+  border-style: solid;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 2px 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.col:nth-child(3n+1) header {
+  background-color: #afc0cb;
+}
+
+
+/*.col:nth-child(3n+1) .content {
+  padding: 52px 15px 4px;
+}*/
+
+.col:nth-child(3n+2) header {
+  background-color: #b8665c;
+  color: #fff;
+}
+
+.col:nth-child(3n) header {
+    background-color: #c8ca4b;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    margin-bottom: 20px;
+  }
+
+  .row {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .col-sm-6, .col-sm-12 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /*.col:nth-child(3n) .content {
+    padding: 40px 2px 16px 15px;
+  }*/
+}
+
+@media (min-width: 992px) {
+  h1 {
+    margin-bottom: 60px;
+  }
+
+  .row {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .col-md-4 {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 33.33333%;
+  }
+
+  /*.col:nth-child(3n) .content {
+    padding: 40px 20px 16px 15px;
+  }*/
+}
