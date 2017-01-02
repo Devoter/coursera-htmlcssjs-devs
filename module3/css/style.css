@@ -1,3 +1,69 @@
 /**
  Coursera HTML, CSS and JavaScript for developers Module 3 style file
  */
+
+body {
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 0 auto 16px;
+}
+
+.navbar-default {
+  background-image: linear-gradient(to bottom, #efefef 0, #eaeaea 100%);
+  background-color: #cacaca;
+  border-radius: 0;
+}
+
+.navbar-brand {
+  margin-top: -30px;
+}
+
+.navbar-nav {
+  background-color: #fff;
+}
+
+.navbar-nav li {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav li:hover {
+  background-color: #e7e7e7;
+}
+
+.menu-item {
+  background-color: #f8f8f8;
+  border: 1px solid #e7e7e7;
+  padding: 10px 20px;
+}
+
+@media (max-width: 767px) { /* screen-xs-max */
+  .menu-item {
+    margin: 20px 30px;
+  }
+}
+
+@media (min-width: 768px) { /* screen-sm-min */
+  h2 {
+    margin-bottom: 30px;
+  }
+
+  .menu-item {
+    margin: 20px 10px;
+  }
+}
